@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Web</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="particles"></div>
+    <nav class="navbar">
+      <div class="navbar-left">
+        <img src="images/logo.png" alt="Logo" class="logo" />
+      </div>
+      <div
+        class="hamburger"
+        id="hamburger"
+        aria-label="Open navigation"
+        tabindex="0"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="navbar-center">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="navbar-right">
+        <button id="theme-toggle" aria-label="Toggle Theme">
+          <span class="theme-icon">🌙</span>
+        </button>
+      </div>
+    </nav>
+
+    <main>
+      <section id="home" class="hero-section">
+        <video
+          class="bg-video"
+          src="images/Home.mp4"
+          autoplay
+          loop
+          muted
+          playsinline
+          aria-hidden="true"
+        ></video>
+        <div class="home">
+          <div class="home-texts scroll-reveal">
+            <h1 class="home-headline">Welcome to Modern Web!</h1>
+            <p class="home-tagline">
+              Experience beautiful, functional, and modern web design.
+            </p>
+          </div>
+          <div class="home-flex">
+            <div class="carousel animate-zoom">
+              <div class="carousel-track">
+                <img src="images/img1.png" alt="Slide 1" />
+                <img src="images/img2.png" alt="Slide 2" />
+                <img src="images/img3.avif" alt="Slide 3" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="hero-section">
+        <video
+          class="bg-video"
+          src="images/about.mp4"
+          autoplay
+          loop
+          muted
+          playsinline
+          aria-hidden="true"
+        ></video>
+        <div class="bg-video-overlay"></div>
+        <div class="about-card scroll-reveal">
+          <h2>About Us</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis
+            libero nulla debitis eligendi harum enim sint laudantium, adipisci
+            recusandae dolores voluptas, odio quo ipsum culpa odit. Expedita
+            harum minima molestias culpa magnam esse impedit, libero mollitia
+            praesentium debitis, alias exercitationem labore voluptas hic ipsum
+            nihil placeat eaque quam sit dolorum ipsam, saepe voluptatibus
+            eveniet. Accusantium eveniet quidem minima nostrum error totam
+            obcaecati laborum aliquam dolorem, ipsam numquam inventore pariatur?
+            Natus.
+          </p>
+        </div>
+      </section>
+      <section id="projects" class="hero-section">
+        <h2 class="section-title">My Works</h2>
+        <p class="section-description">
+          Quam quisque id diam vel quam elementum. Vestibulum lectus mauris
+          ultrices eros in cursus turpis massa tincidunt. Pellentesque habitant
+          morbi tristique senectus et netus.
+        </p>
+        <div class="works-grid">
+          <div class="work-item">
+            <img src="images/proj1.png" alt="Counter App" />
+            <div class="work-overlay">
+              <h3>Counter App</h3>
+              <p class="work-description">
+                A simple application to count numbers up or down.
+              </p>
+              <p class="work-tech-stack">Tech Stack: HTML, CSS, JavaScript</p>
+            </div>
+          </div>
+          <div class="work-item">
+            <img src="images/Proj2.png" alt="Color Picker App" />
+            <div class="work-overlay">
+              <h3>Color Picker App</h3>
+              <p class="work-description">
+                An interactive tool to select and preview colors.
+              </p>
+              <p class="work-tech-stack">Tech Stack: HTML, CSS, JavaScript</p>
+            </div>
+          </div>
+          <div class="work-item">
+            <img src="images/img2.png" alt="Portfolio" />
+            <div class="work-overlay">
+              <h3>Portfolio</h3>
+              <p class="work-description">
+                A personal portfolio website showcasing various projects.
+              </p>
+              <p class="work-tech-stack">
+                Tech Stack: HTML, CSS, JavaScript, React
+              </p>
+            </div>
+          </div>
+          <div class="work-item">
+            <img src="images/proj3.png" alt="Web Ecommerce" />
+            <div class="work-overlay">
+              <h3>Web Ecommerce</h3>
+              <p class="work-description">
+                A responsive e-commerce platform for online shopping.
+              </p>
+              <p class="work-tech-stack">
+                Tech Stack: HTML, CSS, JavaScript, Node.js, MongoDB
+              </p>
+            </div>
+          </div>
+        </div>
+        <p class="images-credit">Images from Freepik</p>
+      </section>
+
+      <section id="contact" class="hero-section">
+        <div class="contact-container">
+          <form class="contact-form scroll-reveal">
+            <h2>Contact Us</h2>
+            <div class="input-group">
+              <span class="icon">&#128100;</span>
+              <!-- Person icon -->
+              <input type="text" placeholder="Your Name" required />
+            </div>
+            <div class="input-group">
+              <span class="icon">&#128231;</span>
+              <!-- Email icon -->
+              <input type="email" placeholder="Your Email" required />
+            </div>
+            <div class="input-group">
+              <span class="icon">&#128232;</span>
+              <!-- Message icon -->
+              <textarea placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+          </form>
+          <div class="contact-illustration scroll-reveal">
+            <img
+              src="images/img3.avif"
+              alt="Contact Illustration"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Modern SPA. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
