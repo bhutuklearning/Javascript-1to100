@@ -74,6 +74,8 @@ switch (d) {
     default:
         break;
 }
+// The default keyword specifies the code to run if there is no case match.
+// When JavaScript reaches a break keyword, it breaks out of the switch block in this case.
 
 // Nested if-else
 console.log("Nested If-else statement");
