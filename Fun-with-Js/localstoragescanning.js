@@ -19,12 +19,11 @@ specific domain.
         }
     }
 
-    // Function to calculate the size of a value in bytes
+
     function getSize(value) {
         return new Blob([value]).size;
     }
 
-    // Function to format the report
     function formatReport() {
         let report = 'Advanced Local Storage Report:\n';
         report += '================================\n\n';
@@ -50,8 +49,8 @@ specific domain.
         return report;
     }
 
-    // Generate and display the report
+
     const report = formatReport();
-    alert(report); // Display the full report in an alert
-    console.log(report); // Also log the report to the console
+    alert(report);
+    console.log(report);
 })();
